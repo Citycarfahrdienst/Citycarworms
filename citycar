@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Citycar Worms Fahrdienst - Ihr zuverlässiger Fahrdienst in Worms. Buchen Sie jetzt Ihre Fahrt.">
+  <meta name="keywords" content="Fahrdienst, Krankenfahrt, Kurierdienst, Worms, Citycar, Personenbeförderung">
+  <meta name="author" content="Citycar Worms Fahrdienst">
+  <title>Citycar Worms Fahrdienst - Ihr Fahrdienst in Worms</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #ffcc00;
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    /* GIF Styling */
+    .hero img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    /* Scale the image for smaller screens */
+    @media (max-width: 768px) {
+      .hero img {
+        max-width: 200px;
+      }
+    }
+
+    /* Hero Section Heading */
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Separate Citycar with bold and color */
+    .hero h1 span.citycar {
+      color: #ffcc00;
+      font-weight: bold;
+    }
+
+    .hero h1 span.fahrdienst {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      font-weight: normal;
+      color: #333;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.1);
+      background-color: #ffcc00;
+    }
+
+    /* Services Section */
+    #services {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .service {
+      margin-bottom: 30px;
+    }
+
+    .service h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      font-size: 1rem;
+    }
+
+    /* Booking Form Section */
+    #buchung {
+      padding: 40px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: grid;
+      gap: 15px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="time"] {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    button[type="submit"] {
+      padding: 15px 30px;
+      background-color: #333;
+      color: white;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #ffcc00;
+    }
+
+    /* Company Information Section */
+    #company-info {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    #company-info p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    footer ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .cta-button {
+        font-size: 1rem;
+      }
+
+      form {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="hero">
+      <!-- Running GIF -->
+      <img src="https://i.pinimg.com/originals/18/2d/33/182d3330d3dc6cb2171f1527d75dc179.gif" alt="Running Fahrdienst">
+      <h1>
+        Willkommen bei Citycar <span class="fahrdienst">Worms Fahrdienst</span>
+      </h1>
+      <h2>Ihr zuverlässiger Fahrdienst in Worms – schnell, sicher und komfortabel</h2>
+      <p>Buchen Sie jetzt Ihre Fahrt einfach und schnell. Wir bieten Ihnen verschiedene Dienstleistungen wie Krankenfahrten, Personenbeförderung und Kurierdienste.</p>
+      <a href="#buchung" class="cta-button">Jetzt Fahrt buchen</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Unsere Dienstleistungen</h2>
+      <div class="service">
+        <h3>Personenbeförderung</h3>
+        <p>Verlässlicher und sicherer Fahrdienst in Worms. Buchen Sie Ihre Fahrt einfach und schnell zu jedem Ziel.</p>
+      </div>
+      <div class="service">
+        <h3>Krankenfahrten</h3>
+        <p>Fahrten für medizinische Zwecke, wie Arztbesuche oder Krankenhausaufenthalte. Wir kümmern uns um Ihre sichere Fahrt.</p>
+      </div>
+      <div class="service">
+        <h3>Kurierdienst</h3>
+        <p>Schneller und sicherer Kurierdienst für Ihre wichtigen Lieferungen und Dokumente. Pünktlich und zuverlässig.</p>
+      </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="buchung">
+      <h2>Buchungsformular</h2>
+      <form id="booking-form">
+        <label for="pickup-location">Abholort:</label>
+        <input type="text" id="pickup-location" name="pickup" required>
+
+        <label for="destination-location">Zielort:</label>
+        <input type="text" id="destination-location" name="destination" required>
+
+        <label for="pickup-date">Datum:</label>
+        <input type="date" id="pickup-date" name="date" required>
+
+        <label for="pickup-time">Uhrzeit:</label>
+        <input type="time" id="pickup-time" name="time" required>
+
+        <label for="contact-info">Kontaktinformationen:</label>
+        <input type="text" id="contact-info" name="contact" required>
+
+        <button type="submit" class="cta-button">Buchung abschicken</button>
+      </form>
+    </section>
+
+    <!-- Company Information Section -->
+    <section id="company-info">
+      <h2>Über uns</h2>
+      <p>Citycar Worms Fahrdienst bietet Ihnen einen zuverlässigen Fahrdienst in Worms. Wir bieten sowohl Fahrten für den Alltag als auch für besondere Fahrten, wie Krankenfahrten und Kurierdienste. Sicherheit und Komfort stehen bei uns an erster Stelle.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Kontakt</h2>
+      <p>Adresse: Leibnizstraße 18, 67551 Worms, Deutschland</p>
+      <p>Telefon: +49 123 456 789</p>
+      <p>Email: <a href="mailto:info@citycarwormsfahrdienst.de">info@citycarwormsfahrdienst.de</a></p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <ul>
+      <li><a href="#impressum">Impressum</a></li>
+      <li><a href="#datenschutz">Datenschutz</a></li>
+    </ul>
+  </footer>
+
+  <!-- Form Submission Script -->
+  <script>
+    document.getElementById("booking-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      let pickupLocation = document.getElementById("pickup-location").value;
+      let destinationLocation = document.getElementById("destination-location").value;
+      let pickupDate = document.getElementById("pickup-date").value;
+      let pickupTime = document.getElementById("pickup-time").value;
+      let contactInfo = document.getElementById("contact-info").value;
+      if (pickupLocation && destinationLocation && pickupDate && pickupTime && contactInfo) {
+        alert("Ihre Buchung wurde erfolgreich gesendet!");
+        this.reset(); // Reset the form
+      } else {
+        alert("Bitte füllen Sie alle Felder aus.");
+      }
+    });
+  </script>
+</body>
+
+</html>
